@@ -88,12 +88,12 @@ nav a:hover{
     color: white; /*cor do texto do link quando o mouse passa por cima*/
     transition: 0.3s; /*transição suave ao passar o mouse*/
     transform: scale(1.1); /*aumenta o tamanho do link ao passar o mouse*/
-    align:center;
+    align-items:center;
 }
 .dropdown {
     position: relative; /*posiciona o item pai do submenu*/
     display: inline-block; /*faz o item pai ocupar apenas o espaço do conteúdo*/
-    align: center;
+    align-items: center;
     color: #FFF;
     font-family: Poppins;
     font-size: 20px;
@@ -114,7 +114,7 @@ nav a:hover{
     list-style: none; /*retira as bolinhas do submenu*/
     padding: 0px; /*retira o espaçamento interno do submenu*/
     margin: 0px; /*retira o espaçamento externo do submenu*/
-    align: center;
+    align-items: center;
     color: #FFF;
     font-family: Poppins;
     font-size: 20px;
@@ -129,7 +129,7 @@ nav a:hover{
 .dropdown:hover .submenu {
     display: block; /*mostra o submenu quando o mouse passa por cima do item pai*/
     animation: alternate 0.5s ease-in-out; /*animação suave ao mostrar o submenu*/
-    align: center;
+    align-items: center;
     color: #FFF;
     font-family: Poppins;
     font-size: 20px;
