@@ -40,35 +40,100 @@ header .identificacao {
 
 nav {
     width: 100%;
-    padding: 0%;
-    margin: 0%;
-    margin-top: 10px;
-    background-color: rgb(197, 238, 114);
-    /*cor de fundo do menu*/
-    display: flex;
-    /*deixa o menu flexível*/
-    justify-content: space-around;
-    /*distribui os itens do menu com espaçamento igual entre eles*/
+    margin: 0px;
+    background-color: rgba(189, 187, 183, 0.397);
     align-items: center;
-    /*alinha os itens do menu ao centro verticalmente*/
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 nav ul {
-    list-style: none;
-    /*remove os marcadores da lista*/
-    display: flex;
-    /*deixa a lista flexível*/
-    flex-direction: row;
-    /*alinha os itens da lista em linha*/
-    justify-content: space-around;
-    /*distribui os itens da lista com espaçamento igual entre eles*/
+    list-style: none;/*retira as bolinhas*/
+    margin: 0px;    /*margem é o espaçamento externo do item*/
+    padding: 0px;   /*padding é o espaçamento interno do item*/
+    display: flex; /*deixa os itens lado a lado horizontal*/
     align-items: center;
-    /*alinha os itens da lista ao centro verticalmente*/
-    width: 100%;
-    /*largura da lista*/
-    border: 1px solid black;
+    color: #FFF;
 }
 nav ul li {
-    margin: 10px;
-    /*margem dos itens da lista*/
+    margin: 0 10px;   /*margem entre os itens*/
+    align-items: center;
+}
+nav a{
+    display: block; /*faz o link ocupar todo o espaço do item*/
+    padding: 10px; /*espaçamento interno do link*/ 
+    text-decoration: none; /*retira o sublinhado do link*/
+    color: white; /*cor do texto do link*/
+    border-radius: 5px; /*borda arredondada do link*/
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+
+}
+nav a:hover{
+    background-color: #867a0b63; /*cor de fundo do link quando o mouse passa por cima*/
+    color: white; /*cor do texto do link quando o mouse passa por cima*/
+    transition: 0.3s; /*transição suave ao passar o mouse*/
+    transform: scale(1.1); /*aumenta o tamanho do link ao passar o mouse*/
+    align:center;
+}
+.dropdown {
+    position: relative; /*posiciona o item pai do submenu*/
+    display: inline-block; /*faz o item pai ocupar apenas o espaço do conteúdo*/
+    align: center;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+.dropdown .submenu {
+    display: none; /*esconde o submenu por padrão*/
+    position: absolute; /*posiciona o submenu em relação ao item pai*/
+    left: 0px; /*alinha o submenu à esquerda do item pai*/
+    min-width: 140px; /*largura mínima do submenu*/
+    background-color: rgba(189, 187, 183, 0.397); /*cor de fundo do submenu*/
+    list-style: none; /*retira as bolinhas do submenu*/
+    padding: 0px; /*retira o espaçamento interno do submenu*/
+    margin: 0px; /*retira o espaçamento externo do submenu*/
+    align: center;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+.dropdown:hover .submenu {
+    display: block; /*mostra o submenu quando o mouse passa por cima do item pai*/
+    animation: alternate 0.5s ease-in-out; /*animação suave ao mostrar o submenu*/
+    align: center;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;   
+    line-height: normal;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
 }
