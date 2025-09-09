@@ -6,13 +6,11 @@
     box-sizing: border-box;
     /*inclui a borda e o padding na largura e altura dos elementos*/
     font-family: Arial, Helvetica, sans-serif
-    /*define a fonte padrão do site*/
-    
-    /*cor de fundo do site*/
+        /*define a fonte padrão do site*/
 }
 
 header .identificacao {
-    background-color: rgb(190, 192, 186);
+    background-color: rgb(155, 156, 153);
     text-align: right;
     /*alinha o texto à direita*/
     flex-direction: row;
@@ -22,17 +20,16 @@ header .identificacao {
 }
 
 .logos {
+    width: 100%;
     display: flex;
     /*deixa as logos flexíveis*/
     flex-direction: row;
     justify-content: flex-start;
-    background-color: black;
-    color:white
+    margin-inline: 25px;
 }
 
 .logos p {
     margin: auto;
-    font-style: initial;
 }
 
 nav {
