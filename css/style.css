@@ -208,3 +208,57 @@ button {
         transform: scale(1.1); /*aumenta o tamanho do link ao passar o mouse*/
         align-items:flex-end;       
     }
+    /*Tela de login*/
+    .login-box {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: 100px auto;
+    }
+
+    .login-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: white;
+        color: #333;
+    }
+
+    .login-box input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+        background: #081f0d;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: #16752b;
+    }
+.cadastro {
+    width: 100%;
+    margin-top: 10px;
+        padding: 10px;
+        background: #011c35;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+}
+    .cadastro:hover {
+        background: #021192;
+    }
