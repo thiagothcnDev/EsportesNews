@@ -1,21 +1,26 @@
-<div class="identificacao"> <!-- Div para identificação do usuário e botão de sair -->
-    Olá <span id="usuario"></span>&nbsp;, seja bem vindo! | <span id="acao"></span>
-    <!-- Div para identificação do usuário e botão de sair -->
+<div class="container">
+    <h2 id="saudacao">Seja bem-vindo, Visitante</h2>
+    <a href="login.html">
+    <button id="acaoBtn" class="btn">Entrar</button>
+    </a>
 </div>
 <div class="logos">
+    <a href="index.html">
     <img height="100px" src="img/Logomarca.png" alt="Esporte News">
+    </a>
     <p aling="center">Seu portal de notícias esportivas!</p>
 </div>
 <nav>
     <ul>
-                <li><a href="index.html">🏠 Home</a></li>  
+                <li><a href="index.html">Home</a></li>  
                 <li class="dropdown"><a href="#">Clubes</a>
                     <ul class="submenu">
-                        <li><a href="#">Cruzeiro</a></li>  
-                        <li><a href="#">Botafogo</a></li>
-                        <li><a href="#">Manchester</a></li>
+                        <li><a href="cruzeiro.html">Cruzeiro</a></li>  
+                        <li><a href="botafogo.html">Botafogo</a></li>
+                        <li><a href="manchester.html">Manchester</a></li>
                     </ul>
                 </li>  
                 <li><a href="noticias.html">Notícias</a></li>
             </ul>
+<script src="js/app.js"></script>
 </nav>
