@@ -173,3 +173,38 @@ nav a:hover{
  text-align: center;
  margin-bottom: 20px;
 }
+
+/*Menu de usuário*/
+.container {
+    display: flex; /*deixa a identificação flexível*/
+    justify-content: flex-end; /*alinha a identificação à direita*/
+    align-items: center; /*alinha a identificação ao centro verticalmente*/
+    background-color: rgba(0, 0, 0, 0); /*cor de fundo da identificação*/
+    padding: 5px 10px;
+}
+h2 {
+    margin-right: 10px; 
+    font-weight: normal;
+    color: white;
+    align-items: flex-end;
+    }
+button {
+        padding: 5px 10px;
+        font-size: 14px;
+        cursor: pointer;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        align-items: flex-end;
+        background: #2b2a2a;
+        cursor: pointer;    
+        font-weight: bold;
+
+    }
+    button:hover {
+        background-color: #6d6f72; /*cor de fundo do link quando o mouse passa por cima*/
+        color: white; /*cor do texto do link quando o mouse passa por cima*/
+        transition: 0.3s; /*transição suave ao passar o mouse*/
+        transform: scale(1.1); /*aumenta o tamanho do link ao passar o mouse*/
+        align-items:flex-end;       
+    }
