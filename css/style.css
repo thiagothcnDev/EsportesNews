@@ -158,7 +158,9 @@ nav a:hover{
     text-transform: none;
     color: white;
 }
+/*-------COMEÇA O CSS DA TELA DE NOTICIAS--------*/
 .noticia{
+    color: #FFF;    
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-bottom: 20px;
@@ -170,6 +172,7 @@ nav a:hover{
  margin-bottom: 20px;
 }
 .sub_not{
+    color: #FFF;
  text-align: center;
  margin-bottom: 20px;
 }
