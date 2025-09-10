@@ -84,7 +84,7 @@ nav a{
 
 }
 nav a:hover{
-    background-color: #867a0b63; /*cor de fundo do link quando o mouse passa por cima*/
+    background-color: #e4e4e163; /*cor de fundo do link quando o mouse passa por cima*/
     color: white; /*cor do texto do link quando o mouse passa por cima*/
     transition: 0.3s; /*transição suave ao passar o mouse*/
     transform: scale(1.1); /*aumenta o tamanho do link ao passar o mouse*/
