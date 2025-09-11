@@ -10,7 +10,7 @@
     /*define a fonte padrão do site*/
     }
 header .identificacao {
-    background-color: rgb(190, 192, 186);
+    background-color: rgb(180, 178, 192);
     text-align: right;
     /*alinha o texto à direita*/
     flex-direction: row;
@@ -110,7 +110,7 @@ nav a:hover{
     position: absolute; /*posiciona o submenu em relação ao item pai*/
     left: 0px; /*alinha o submenu à esquerda do item pai*/
     min-width: 140px; /*largura mínima do submenu*/
-    background-color: rgba(189, 187, 183, 0.397); /*cor de fundo do submenu*/
+    background-color: rgba(159, 139, 248, 0.5); /*cor de fundo do submenu*/
     list-style: none; /*retira as bolinhas do submenu*/
     padding: 0px; /*retira o espaçamento interno do submenu*/
     margin: 0px; /*retira o espaçamento externo do submenu*/
@@ -119,7 +119,7 @@ nav a:hover{
     font-family: Poppins;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 350;
     line-height: normal;
     text-align: center;
     justify-content: center;
