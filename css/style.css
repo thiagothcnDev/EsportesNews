@@ -159,6 +159,7 @@ nav a:hover{
     color: white;
 }
 /*-------COMEÇA O CSS DA TELA DE NOTICIAS--------*/
+
 .noticia{
     color: #FFF;    
     font-family: Arial, Helvetica, sans-serif;
@@ -168,29 +169,32 @@ nav a:hover{
     margin: 0;
 }
 .titulo_not{
- text-align: center;
- margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .sub_not{
     color: #FFF;
- text-align: center;
- margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
+/*-------FIM DO CSS DA TELA NOTICIAS-------*/
 
 /*Menu de usuário*/
 .container {
     display: flex; /*deixa a identificação flexível*/
     justify-content: flex-end; /*alinha a identificação à direita*/
-    align-items: center; /*alinha a identificação ao centro verticalmente*/
     background-color: rgba(0, 0, 0, 0); /*cor de fundo da identificação*/
     padding: 5px 10px;
 }
-h2 {
-    margin-right: 10px; 
-    font-weight: normal;
-    color: white;
-    align-items: flex-end;
-    }
+.saudacao {
+    color: white; /*cor do texto da saudação*/
+    font-size: 14px; /*tamanho da fonte da saudação*/
+    margin-right: 10px; /*margem direita da saudação*/
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 button {
         padding: 5px 10px;
         font-size: 14px;
@@ -238,7 +242,6 @@ button {
     }
 
     .btn {
-        width: 100%;
         padding: 10px;
         background: #081f0d;
         border: none;
@@ -263,7 +266,12 @@ button {
     .cadastro:hover {
         text-decoration: underline;
     }
-
+#nome {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    color: white;
+}
 /*Tela de cadastro*/
     #cadastro-container {
         margin: 100px auto;

@@ -3,33 +3,21 @@ window.onload = function () {
   carregarConteudoComXHR('footer.html', 'footer');
 
   // Funções de login/logout
-  const saudacao = document.getElementById("saudacao");
-  const botao = document.getElementById("acaoBtn");
+  var nome = document.getElementById("nome");
+  var acao = document.getElementById("acao");
 
-  function atualizarTela() {
-    let usuarioLogado = localStorage.getItem("usuario"); // sempre atualizado
-    if (usuarioLogado) {
-      saudacao.textContent = `Seja bem-vindo, ${usuarioLogado}`;
-      botao.textContent = "Sair";
-    } else {
-      saudacao.textContent = "Seja bem-vindo, Visitante";
-      botao.textContent = "Entrar";
-    }
+  if (localStorage.getItem("logado") === null) {
+    localStorage.setItem("logado", false);
   }
 
-  botao.addEventListener("click", () => {
-    let usuarioLogado = localStorage.getItem("usuario");
-    if (usuarioLogado) {
-      // Logout → remove usuário e recarrega
-      localStorage.removeItem("usuario");
-      window.location.href = "index.html";
-    } else {
-      // Vai para tela de login
-      window.location.href = "login.html";
-    }
-  });
-
-  atualizarTela();
+  let usuarioLogado = localStorage.getItem("usuario");
+  let logado = localStorage.getItem("logado") === "true";
+  nome.innerText = logado && usuarioLogado ? usuarioLogado : "Visitante";
+  if (logado) {
+    acao.innerHTML = '<a href="" onclick="sair()" class="btn">Sair</a>';
+  } else {
+    acao.innerHTML = '<a href="login.html" class="btn">Entrar</a>';
+  }
 };
 
 // Função para carregar conteúdo via XHR
@@ -45,17 +33,17 @@ function carregarConteudoComXHR(url, idElemento) {
       elemento.innerHTML = '<p>Falha ao carregar o conteúdo.</p>';
     }
   };
-  xhr.send(); 
-}   
+  xhr.send();
+}
 
 // Login
 function fazerLogin() {
-  const usuario = document.getElementById("usuario").value;
-  const senha = document.getElementById("senha").value;
+  var usuario = document.getElementById("usuario").value;
+  var senha = document.getElementById("senha").value;
 
-  // Exemplo simples (poderia validar no backend)
-  if (usuario && senha) {
-    localStorage.setItem("usuario", usuario);
+  // Exemplo simples
+  if (usuario === localStorage.getItem("usuario") && senha === localStorage.getItem("senha")) {
+    localStorage.setItem("usuario", usuario); localStorage.setItem("logado", "true");
     window.location.href = "index.html";
   } else {
     alert("Preencha usuário e senha!");
@@ -66,26 +54,28 @@ function cadastro() {
   window.location.href = "cadastro.html";
 }
 function fazerCadastro() {
-      const usuario = document.getElementById("usuario").value;
-      const senha = document.getElementById("senha").value;
-      const confirmarSenha = document.getElementById("confirmarSenha").value;
+  const usuario = document.getElementById("usuario").value;
+  const senha = document.getElementById("senha").value;
+  const confirmarSenha = document.getElementById("confirmarSenha").value;
 
-      if (!usuario || !senha || !confirmarSenha) {
-        alert("Preencha todos os campos!");
-        return;
-      }
+  if (!usuario || !senha || !confirmarSenha) {
+    alert("Preencha todos os campos!");
+    return;
+  }
 
-      if (senha !== confirmarSenha) {
-        alert("As senhas não conferem!");
-        return;
-      }
+  if (senha !== confirmarSenha) {
+    alert("As senhas não conferem!");
+    return;
+  }
 
-      // salvar local simplesmente
-      localStorage.setItem("usuario", usuario);
-      alert("Cadastro realizado com sucesso!");
-      window.location.href = "index.html";
-    }
-
-    function voltarLogin() {
-      window.location.href = "login.html";
-    }
+  // salvar local simplesmente
+  localStorage.setItem("usuario", usuario);
+  localStorage.setItem("senha", senha);
+  alert("Cadastro realizado com sucesso!");
+  window.location.href = "login.html";
+}
+function sair() {
+  localStorage.setItem("logado", "false");
+  usuarioLogado = "Visitante";
+  window.location.href = "login.html";
+}
