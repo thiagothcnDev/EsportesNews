@@ -16,7 +16,7 @@ window.onload = function () {
   if (logado) {
     acao.innerHTML = '<a href="" onclick="sair()" class="btn">Sair</a>';
   } else {
-    acao.innerHTML = '<a href="login.html" class="btn">Entrar</a>';
+    acao.innerHTML = '<a href="login.html" class="btn">Entrar</a><a href="cadastro.html" class="btn">Cadastre-se</a>';
   }
 };
 
