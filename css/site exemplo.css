@@ -87,7 +87,7 @@ ul{
     color: white;
     text-align: center;
     text-decoration: solid rgb(36, 37, 37);
-    text-shadow: 2px 2px 4px rgba(43, 42, 44, 0.5); /*sombra do texto do rodapé*/
+    text-shadow: 2px 2px 4px rgba(40, 46, 49, 0.5); /*sombra do texto do rodapé*/
     padding: 10px;
     position: fixed; /*fixa o rodapé na parte inferior da tela*/
     bottom: 0; /*alinha o rodapé na parte inferior*/
@@ -115,7 +115,7 @@ input{
     
 }
 .entrar {
-    background-color: #102f69; /*cor de fundo dos botões*/
+    background-color: #1680be; /*cor de fundo dos botões*/
     }
 .limpar {
     background-color: #911717; /*cor de fundo do botão de limpar*/
