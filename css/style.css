@@ -7,8 +7,9 @@
     box-sizing: border-box;
     /*inclui a borda e o padding na largura e altura dos elementos*/
     font-family: Arial, Helvetica, sans-serif
-    /*define a fonte padrão do site*/
-    }
+        /*define a fonte padrão do site*/
+}
+
 header .identificacao {
     background-color: rgb(190, 192, 186);
     text-align: right;
@@ -23,20 +24,22 @@ header .identificacao {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    color:white
+    color: white
 }
+
 .logos p {
     margin: auto;
     text-shadow: 2px 2px 4px #858585;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
-    font-size: 60px; 
+    font-size: 60px;
     margin-left: 80px;
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
 
 }
+
 nav {
     width: 100%;
     margin: 0px;
@@ -56,23 +59,35 @@ nav {
 }
 
 nav ul {
-    list-style: none;/*retira as bolinhas*/
-    margin: 0px;    /*margem é o espaçamento externo do item*/
-    padding: 0px;   /*padding é o espaçamento interno do item*/
-    display: flex; /*deixa os itens lado a lado horizontal*/
+    list-style: none;
+    /*retira as bolinhas*/
+    margin: 0px;
+    /*margem é o espaçamento externo do item*/
+    padding: 0px;
+    /*padding é o espaçamento interno do item*/
+    display: flex;
+    /*deixa os itens lado a lado horizontal*/
     align-items: center;
     color: #FFF;
 }
+
 nav ul li {
-    margin: 0 10px;   /*margem entre os itens*/
+    margin: 0 10px;
+    /*margem entre os itens*/
     align-items: center;
 }
-nav a{
-    display: block; /*faz o link ocupar todo o espaço do item*/
-    padding: 10px; /*espaçamento interno do link*/ 
-    text-decoration: none; /*retira o sublinhado do link*/
-    color: white; /*cor do texto do link*/
-    border-radius: 5px; /*borda arredondada do link*/
+
+nav a {
+    display: block;
+    /*faz o link ocupar todo o espaço do item*/
+    padding: 10px;
+    /*espaçamento interno do link*/
+    text-decoration: none;
+    /*retira o sublinhado do link*/
+    color: white;
+    /*cor do texto do link*/
+    border-radius: 5px;
+    /*borda arredondada do link*/
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -83,16 +98,24 @@ nav a{
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 
 }
-nav a:hover{
-    background-color: #e4e4e163; /*cor de fundo do link quando o mouse passa por cima*/
-    color: white; /*cor do texto do link quando o mouse passa por cima*/
-    transition: 0.3s; /*transição suave ao passar o mouse*/
-    transform: scale(1.1); /*aumenta o tamanho do link ao passar o mouse*/
-    align-items:center;
+
+nav a:hover {
+    background-color: #e4e4e163;
+    /*cor de fundo do link quando o mouse passa por cima*/
+    color: white;
+    /*cor do texto do link quando o mouse passa por cima*/
+    transition: 0.3s;
+    /*transição suave ao passar o mouse*/
+    transform: scale(1.1);
+    /*aumenta o tamanho do link ao passar o mouse*/
+    align-items: center;
 }
+
 .dropdown {
-    position: relative; /*posiciona o item pai do submenu*/
-    display: inline-block; /*faz o item pai ocupar apenas o espaço do conteúdo*/
+    position: relative;
+    /*posiciona o item pai do submenu*/
+    display: inline-block;
+    /*faz o item pai ocupar apenas o espaço do conteúdo*/
     align-items: center;
     color: #FFF;
     font-family: Poppins;
@@ -105,15 +128,24 @@ nav a:hover{
     letter-spacing: 0.02em;
     text-transform: uppercase;
 }
+
 .dropdown .submenu {
-    display: none; /*esconde o submenu por padrão*/
-    position: absolute; /*posiciona o submenu em relação ao item pai*/
-    left: 0px; /*alinha o submenu à esquerda do item pai*/
-    min-width: 140px; /*largura mínima do submenu*/
-    background-color: rgba(189, 187, 183, 0.397); /*cor de fundo do submenu*/
-    list-style: none; /*retira as bolinhas do submenu*/
-    padding: 0px; /*retira o espaçamento interno do submenu*/
-    margin: 0px; /*retira o espaçamento externo do submenu*/
+    display: none;
+    /*esconde o submenu por padrão*/
+    position: absolute;
+    /*posiciona o submenu em relação ao item pai*/
+    left: 0px;
+    /*alinha o submenu à esquerda do item pai*/
+    min-width: 140px;
+    /*largura mínima do submenu*/
+    background-color: rgba(189, 187, 183, 0.397);
+    /*cor de fundo do submenu*/
+    list-style: none;
+    /*retira as bolinhas do submenu*/
+    padding: 0px;
+    /*retira o espaçamento interno do submenu*/
+    margin: 0px;
+    /*retira o espaçamento externo do submenu*/
     align-items: center;
     color: #FFF;
     font-family: Poppins;
@@ -126,28 +158,37 @@ nav a:hover{
     letter-spacing: 0.02em;
     text-transform: uppercase;
 }
+
 .dropdown:hover .submenu {
-    display: block; /*mostra o submenu quando o mouse passa por cima do item pai*/
-    animation: alternate 0.5s ease-in-out; /*animação suave ao mostrar o submenu*/
+    display: block;
+    /*mostra o submenu quando o mouse passa por cima do item pai*/
+    animation: alternate 0.5s ease-in-out;
+    /*animação suave ao mostrar o submenu*/
     align-items: center;
     color: #FFF;
     font-family: Poppins;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;   
+    font-weight: 400;
     line-height: normal;
     text-align: center;
     justify-content: center;
     letter-spacing: 0.02em;
     text-transform: uppercase;
 }
-.contents{
-    min-height: 50vh; /*altura mínima do conteúdo para ocupar o restante da tela*/
-    margin: 20px; /*margem externa do conteúdo*/
-    padding: 20px; /*espaçamento interno do conteúdo*/
-    text-align: center; /*alinha o texto do conteúdo ao centro*/
+
+.contents {
+    min-height: 50vh;
+    /*altura mínima do conteúdo para ocupar o restante da tela*/
+    margin: 20px;
+    /*margem externa do conteúdo*/
+    padding: 20px;
+    /*espaçamento interno do conteúdo*/
+    text-align: center;
+    /*alinha o texto do conteúdo ao centro*/
     color: #FFF;
 }
+
 .desevolvedores {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -158,156 +199,534 @@ nav a:hover{
     text-transform: none;
     color: white;
 }
-.noticia{
+
+.noticia {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-bottom: 20px;
     padding: 0;
     margin: 0;
 }
-.titulo_not{
- text-align: center;
- margin-bottom: 20px;
+
+.titulo_not {
+    text-align: center;
+    margin-bottom: 20px;
 }
-.sub_not{
- text-align: center;
- margin-bottom: 20px;
+
+.sub_not {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /*Menu de usuário*/
 .container {
-    display: flex; /*deixa a identificação flexível*/
-    justify-content: flex-end; /*alinha a identificação à direita*/
-    align-items: center; /*alinha a identificação ao centro verticalmente*/
-    background-color: rgba(0, 0, 0, 0); /*cor de fundo da identificação*/
+    display: flex;
+    /*deixa a identificação flexível*/
+    justify-content: flex-end;
+    /*alinha a identificação à direita*/
+    align-items: center;
+    /*alinha a identificação ao centro verticalmente*/
+    background-color: rgba(0, 0, 0, 0);
+    /*cor de fundo da identificação*/
     padding: 5px 10px;
 }
+
 h2 {
-    margin-right: 10px; 
+    margin-right: 10px;
     font-weight: normal;
     color: white;
     align-items: flex-end;
-    }
+}
+
 button {
-        padding: 5px 10px;
-        font-size: 14px;
-        cursor: pointer;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        align-items: flex-end;
-        background: #2b2a2a;
-        cursor: pointer;    
-        font-weight: bold;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    align-items: flex-end;
+    background: #2b2a2a;
+    cursor: pointer;
+    font-weight: bold;
 
-    }
-    button:hover {
-        background-color: #6d6f72; /*cor de fundo do link quando o mouse passa por cima*/
-        color: white; /*cor do texto do link quando o mouse passa por cima*/
-        transition: 0.3s; /*transição suave ao passar o mouse*/
-        transform: scale(1.1); /*aumenta o tamanho do link ao passar o mouse*/
-        align-items:flex-end;       
-    }
-    /*Tela de login*/
-    .login-box {
-        background: white;
-        padding: 25px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 300px;
-        margin: 100px auto;
-    }
+}
 
-    .login-box h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        background-color: white;
-        color: #333;
-    }
+button:hover {
+    background-color: #6d6f72;
+    /*cor de fundo do link quando o mouse passa por cima*/
+    color: white;
+    /*cor do texto do link quando o mouse passa por cima*/
+    transition: 0.3s;
+    /*transição suave ao passar o mouse*/
+    transform: scale(1.1);
+    /*aumenta o tamanho do link ao passar o mouse*/
+    align-items: flex-end;
+}
 
-    .login-box input {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: white;
-    }
+/*Tela de login*/
+.login-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 100px auto;
+}
 
-    .btn {
-        width: 100%;
-        padding: 10px;
-        background: #081f0d;
-        border: none;
-        border-radius: 5px;
-        color: white;
-        font-size: 16px;
-        cursor: pointer;
-    }
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white;
+    color: #333;
+}
 
-    .btn:hover {
-        background: #16752b;
-    }
-    .cadastro {
-        display: block;
-      margin-top: 15px;
-      font-size: 12px;
-      color: #007BFF;
-      cursor: pointer;
-      background-color: white;
-    }
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
 
-    .cadastro:hover {
-        text-decoration: underline;
-    }
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #081f0d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #16752b;
+}
+
+.cadastro {
+    display: block;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #007BFF;
+    cursor: pointer;
+    background-color: white;
+}
+
+.cadastro:hover {
+    text-decoration: underline;
+}
 
 /*Tela de cadastro*/
-    #cadastro-container {
-        margin: 100px auto;
-        align-items: center;
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-      width: 320px;
-      text-align: center;
-    }
-    #cadastro-container h2 {
-      text-align: center;
-        margin-bottom: 20px;
-        background-color: white;
-        color: #333;
-    }
-    #cadastro-container input {
-      width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: white;
-    }
-    button {
-      width: 95%;
-      padding: 10px;
-      margin-top: 10px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      background: #28a745;
-      color: #fff;
-      font-size: 16px;
-    }
-    button:hover {
-      background: #1e7e34;
-    }
-    .link-login {
-      display: block;
-      margin-top: 15px;
-      font-size: 14px;
-      color: #007BFF;
-      cursor: pointer;
-      background-color: white;
-    }
-    .link-login:hover {
-      text-decoration: underline;
-    }
+#cadastro-container {
+    margin: 100px auto;
+    align-items: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+}
+
+#cadastro-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white;
+    color: #333;
+}
+
+#cadastro-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+button {
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #28a745;
+    color: #fff;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #1e7e34;
+}
+
+.link-login {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #007BFF;
+    cursor: pointer;
+    background-color: white;
+}
+
+.link-login:hover {
+    text-decoration: underline;
+}
+
+.img-cruzeiro {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-cruzeiro-escalacao {
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-cruzeiro-trofeus {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trofeus-cruzeiro {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.trofeus-cruzeiro p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cruzeiro {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.escalacao-cruzeiro p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.img-estadio-cruzeiro {
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.estadio-cruzeiro p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.img-cruzeiro-mascote {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-right: auto;
+}
+
+.mascote-cruzeiro p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.mascote-cruzeiro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img-botafogo {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Botafogo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img-botafogo-escalacao {
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.escalacao-botafogo p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.img-botafogo-trofeus {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-right: auto;
+}
+
+.trofeus-botafogo p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.trofeus-botafogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img-estadio-botafogo {
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.estadio-botafogo p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.mascote-botafogo {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mascote-botafogo p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.manchester {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img-manchester {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-manchester-escalacao {
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.escalacao-manchester p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.img-manchester-trofeus {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trofeus-manchester p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.trofeus-manchester {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img-estadio-manchester {
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.estadio-manchester p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.img-manchester-mascote {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-right: auto;
+}
+
+.mascote-manchester p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.mascote-manchester {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
