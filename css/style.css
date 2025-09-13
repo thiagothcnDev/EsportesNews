@@ -130,14 +130,22 @@ nav a:hover {
 }
 
 .dropdown .submenu {
-    display: none; /*esconde o submenu por padrão*/
-    position: absolute; /*posiciona o submenu em relação ao item pai*/
-    left: 0px; /*alinha o submenu à esquerda do item pai*/
-    min-width: 140px; /*largura mínima do submenu*/
-    background-color: rgba(189, 187, 183, 0.397); /*cor de fundo do submenu*/
-    list-style: none; /*retira as bolinhas do submenu*/
-    padding: 0px; /*retira o espaçamento interno do submenu*/
-    margin: 0px; /*retira o espaçamento externo do submenu*/
+    display: none;
+    /*esconde o submenu por padrão*/
+    position: absolute;
+    /*posiciona o submenu em relação ao item pai*/
+    left: 0px;
+    /*alinha o submenu à esquerda do item pai*/
+    min-width: 140px;
+    /*largura mínima do submenu*/
+    background-color: rgba(189, 187, 183, 0.397);
+    /*cor de fundo do submenu*/
+    list-style: none;
+    /*retira as bolinhas do submenu*/
+    padding: 0px;
+    /*retira o espaçamento interno do submenu*/
+    margin: 0px;
+    /*retira o espaçamento externo do submenu*/
     align-items: center;
     color: #FFF;
     font-family: Poppins;
@@ -191,7 +199,8 @@ nav a:hover {
     text-transform: none;
     color: white;
 }
-.noticia{
+
+.noticia {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-bottom: 20px;
@@ -203,27 +212,34 @@ nav a:hover {
     text-align: center;
     margin-bottom: 20px;
 }
-.sub_not{
- text-align: center;
- margin-bottom: 20px;
+
+.sub_not {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /*-------FIM DO CSS DA TELA NOTICIAS-------*/
 
 /*Menu de usuário*/
 .container {
-    display: flex; /*deixa a identificação flexível*/
-    justify-content: flex-end; /*alinha a identificação à direita*/
-    align-items: center; /*alinha a identificação ao centro verticalmente*/
-    background-color: rgba(0, 0, 0, 0); /*cor de fundo da identificação*/
+    display: flex;
+    /*deixa a identificação flexível*/
+    justify-content: flex-end;
+    /*alinha a identificação à direita*/
+    align-items: center;
+    /*alinha a identificação ao centro verticalmente*/
+    background-color: rgba(0, 0, 0, 0);
+    /*cor de fundo da identificação*/
     padding: 5px 10px;
 }
+
 h2 {
-    margin-right: 10px; 
+    margin-right: 10px;
     font-weight: normal;
     color: white;
     align-items: flex-end;
-    }
+}
+
 button {
     padding: 5px 10px;
     font-size: 14px;
@@ -236,23 +252,29 @@ button {
     cursor: pointer;
     font-weight: bold;
 
-    }
-    button:hover {
-        background-color: #6d6f72; /*cor de fundo do link quando o mouse passa por cima*/
-        color: white; /*cor do texto do link quando o mouse passa por cima*/
-        transition: 0.3s; /*transição suave ao passar o mouse*/
-        transform: scale(1.1); /*aumenta o tamanho do link ao passar o mouse*/
-        align-items:flex-end;       
-    }
-    /*Tela de login*/
-    .login-box {
-        background: white;
-        padding: 25px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 300px;
-        margin: 100px auto;
-    }
+}
+
+button:hover {
+    background-color: #6d6f72;
+    /*cor de fundo do link quando o mouse passa por cima*/
+    color: white;
+    /*cor do texto do link quando o mouse passa por cima*/
+    transition: 0.3s;
+    /*transição suave ao passar o mouse*/
+    transform: scale(1.1);
+    /*aumenta o tamanho do link ao passar o mouse*/
+    align-items: flex-end;
+}
+
+/*Tela de login*/
+.login-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 100px auto;
+}
 
 .login-box h2 {
     text-align: center;
@@ -270,16 +292,16 @@ button {
     background-color: white;
 }
 
-    .btn {
-        width: 100%;
-        padding: 10px;
-        background: #081f0d;
-        border: none;
-        border-radius: 5px;
-        color: white;
-        font-size: 16px;
-        cursor: pointer;
-    }
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #081f0d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 .btn:hover {
     background: #16752b;
@@ -306,52 +328,395 @@ button {
 }
 
 /*Tela de cadastro*/
-    #cadastro-container {
-        margin: 100px auto;
-        align-items: center;
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-      width: 320px;
-      text-align: center;
-    }
-    #cadastro-container h2 {
-      text-align: center;
-        margin-bottom: 20px;
-        background-color: white;
-        color: #333;
-    }
-    #cadastro-container input {
-      width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: white;
-    }
-    button {
-      width: 95%;
-      padding: 10px;
-      margin-top: 10px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      background: #28a745;
-      color: #fff;
-      font-size: 16px;
-    }
-    button:hover {
-      background: #1e7e34;
-    }
-    .link-login {
-      display: block;
-      margin-top: 15px;
-      font-size: 14px;
-      color: #007BFF;
-      cursor: pointer;
-      background-color: white;
-    }
-    .link-login:hover {
-      text-decoration: underline;
-    }
+#cadastro-container {
+    margin: 100px auto;
+    align-items: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+}
+
+#cadastro-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white;
+    color: #333;
+}
+
+#cadastro-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+button {
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #28a745;
+    color: #fff;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #1e7e34;
+}
+
+.link-login {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #007BFF;
+    cursor: pointer;
+    background-color: white;
+}
+
+.link-login:hover {
+    text-decoration: underline;
+}
+
+.CRUZEIRO {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 4px #858585;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cruzeiro-bandeira {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.cruzeiro-escalacao {
+    width: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 10px auto;
+}
+.cruzeiro-escalacao-img {
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.cruzeiro-escalacao p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 10px;
+}
+
+.cruzeiro-trofeus p {
+    width: 1000px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    margin: 10px auto;
+}
+
+.cruzeiro-trofeus-img {
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.cruzeiro-trofeus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.cruzeiro-estadio-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 10px auto;
+
+}
+.cruzeiro-estadio p {
+    width: 1000px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    margin: 10px auto;
+}
+.cruzeiro-mascote-img {
+    gap: 20px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    margin: 10px auto;
+
+}
+.cruzeiro-mascote p {
+    width: 1000px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    margin: 10px auto;
+}
+.cruzeiro-mascote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.BOTAFOGO{
+     font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 4px #858585;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.botafogo-bandeira {
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 10px auto;
+}
+.botafogo-escalacao-img {
+    width: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin : 10px auto;
+}
+.botafogo-escalacao p {
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 10px auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.botafogo-trofeus-img {
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 10px auto;
+}
+.botafogo-trofeus p {
+    width: 1000px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    margin: 10px auto;
+}
+.botafogo-trofeus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.botafogo-estadio-img {
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.botafogo-estadio p {
+    width: 1000px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    margin: 10px auto;
+}
+.botafogo-mascote-img {
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: right;
+    margin: 10px auto;
+    display: right;     
+    align-items: right;
+    justify-content: right;
+    gap: 20px;
+}
+.botafogo-mascote p {
+    width: 1000px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    margin: 10px auto;
+}
+.botafogo-mascote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.MANCHESTER {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 4px #858585;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.manchester-bandeira {
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 10px auto;
+}
+.manchester-escalacao-img {
+    width: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin : 10px auto;
+}
+.manchester-escalacao p {
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 10px auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.manchester-trofeus-img {
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 10px auto;
+}
+.manchester-trofeus p {
+    width: 1000px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    margin: 10px auto;
+}
+.manchester-trofeus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.manchester-estadio-img {
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.manchester-estadio p {
+    width: 1000px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    margin: 10px auto;
+}
+.manchester-mascote-img {
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: right;
+    margin: 10px auto;
+    display: right;     
+    align-items: right;
+    justify-content: right;
+    gap: 20px;
+}
+.manchester-mascote p {
+    width: 1000px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    margin: 10px auto;
+}
+.manchester-mascote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
